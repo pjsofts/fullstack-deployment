@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+const apiURL = import.meta.env.VITE_API_URL
 
 function App() {
   const [count, setCount] = useState(0)
   const [message, setMessage] = useState('')
   useEffect(() => {
-    fetch('http://localhost:3000')
+    fetch(`${apiURL}/`)
       .then(response => response.json())
       .then(data => {console.log(data); setMessage(data.message)})
       

@@ -1,0 +1,14 @@
+.git
+.env
+node_modules
+dist
+coverage
+.DS_Store
+.idea
+.vscode
+.prettierrc
+.prettierignore
+.eslintrc.js
+.eslintignore
+.gitignore
+Dockerfile
